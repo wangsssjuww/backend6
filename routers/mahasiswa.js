@@ -12,4 +12,8 @@ routerMahasiswa.route('/mahasiswa/:nim')
     .put(controllerMahasiswa.update)
     .delete(controllerMahasiswa.delete)
 
+routerMahasiswa.route('/mahasiswa/nim/:nilai')
+    .get(controllerMahasiswa.getNilaiByNim)
+    .put(controllerMahasiswa.insertNilai)
+
 module.exports = routerMahasiswa
